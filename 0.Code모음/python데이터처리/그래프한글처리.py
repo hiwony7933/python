@@ -8,3 +8,11 @@ elif platform.system() == 'Windows':
     rc('font', family=font_name)
 
 
+
+import matplotlib
+
+#한글 라벨 설정 : '맑은 고딕'으로 설정 (windows 운영체제만)
+matplotlib.rcParams['font.family'] = 'Malgun Gothic'
+
+#한글 라벨 설정 : '맑은 고딕'으로 설정 (Mac 운영체제만)
+matplotlib.rcParams['font.family'] = 'AppleGothic'
