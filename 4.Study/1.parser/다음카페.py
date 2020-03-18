@@ -3,7 +3,7 @@
 
 from selenium import webdriver
 
-driver = webdriver.Chrome('/Users/jw/python/chromedriver')
+driver = webdriver.Chrome('../python/chromedriver')
 driver.implicitly_wait(3)
 
 driver.get("http://top.cafe.daum.net/_c21_/my_cafe")

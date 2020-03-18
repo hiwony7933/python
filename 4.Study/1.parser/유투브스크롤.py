@@ -14,13 +14,11 @@ options.add_argument("disable-gpu")
 # driver = webdriver.Chrome('chromedriver', chrome_options=options)
 # 백그라운드작업
 
-driver = webdriver.Chrome(
-    '/Users/jw/python/chromedriver', chrome_options=options)
+driver = webdriver.Chrome('../python/chromedriver', chrome_options=options)
 
 file = codecs.open("text.txt", 'w', encoding="utf-8")
 
-driver.get(
-    'https://www.youtube.com/results?search_query=%EB%A7%88%EB%A7%88%EB%AC%B4')
+driver.get('https://www.youtube.com/results?search_query=%EB%A7%88%EB%A7%88%EB%AC%B4')
 
 body = driver.find_element_by_tag_name('body')  # 스크롤하기 위해 소스 추출
 
